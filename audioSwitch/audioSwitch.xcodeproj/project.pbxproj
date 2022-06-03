@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E341188F24AA44CB00BA0FB5 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341188E24AA44CB00BA0FB5 /* MotherView.swift */; };
+		E341189124AA45D400BA0FB5 /* ContentViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341189024AA45D400BA0FB5 /* ContentViewB.swift */; };
+		E341189324AA483A00BA0FB5 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341189224AA483A00BA0FB5 /* ViewRouter.swift */; };
+		E341189724AD86EB00BA0FB5 /* Characteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341189624AD86EB00BA0FB5 /* Characteristics.swift */; };
+		E341189924AE943F00BA0FB5 /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341189824AE943F00BA0FB5 /* SpeechRecognition.swift */; };
+		E341189B24AEBABE00BA0FB5 /* ConnectedDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341189A24AEBABE00BA0FB5 /* ConnectedDevice.swift */; };
+		E3E4B0B824A2B7E000778566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4B0B724A2B7E000778566 /* AppDelegate.swift */; };
+		E3E4B0BA24A2B7E000778566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4B0B924A2B7E000778566 /* SceneDelegate.swift */; };
+		E3E4B0BC24A2B7E000778566 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4B0BB24A2B7E000778566 /* ContentView.swift */; };
+		E3E4B0BE24A2B7E200778566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E4B0BD24A2B7E200778566 /* Assets.xcassets */; };
+		E3E4B0C124A2B7E200778566 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E4B0C024A2B7E200778566 /* Preview Assets.xcassets */; };
+		E3E4B0C424A2B7E200778566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E4B0C224A2B7E200778566 /* LaunchScreen.storyboard */; };
+		E3E4B0CF24A2B7E200778566 /* audioSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4B0CE24A2B7E200778566 /* audioSwitchTests.swift */; };
+		E3E4B13624A413EB00778566 /* BLEConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4B13524A413EB00778566 /* BLEConnection.swift */; };
+		E3FDE06824D1D39F00A95A96 /* AudioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDE06724D1D39F00A95A96 /* AudioRecord.swift */; };
+		E3FDE06A24D1D64E00A95A96 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FDE06924D1D64E00A95A96 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3E4B0CB24A2B7E200778566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3E4B0AC24A2B7E000778566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3E4B0B324A2B7E000778566;
+			remoteInfo = audioSwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E341188E24AA44CB00BA0FB5 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		E341189024AA45D400BA0FB5 /* ContentViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewB.swift; sourceTree = "<group>"; };
+		E341189224AA483A00BA0FB5 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		E341189624AD86EB00BA0FB5 /* Characteristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characteristics.swift; sourceTree = "<group>"; };
+		E341189824AE943F00BA0FB5 /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
+		E341189A24AEBABE00BA0FB5 /* ConnectedDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedDevice.swift; sourceTree = "<group>"; };
+		E3E4B0B424A2B7E000778566 /* AudioSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E4B0B724A2B7E000778566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3E4B0B924A2B7E000778566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3E4B0BB24A2B7E000778566 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3E4B0BD24A2B7E200778566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3E4B0C024A2B7E200778566 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3E4B0C324A2B7E200778566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3E4B0C524A2B7E200778566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E4B0CA24A2B7E200778566 /* audioSwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioSwitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E4B0CE24A2B7E200778566 /* audioSwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioSwitchTests.swift; sourceTree = "<group>"; };
+		E3E4B0D024A2B7E200778566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E4B13524A413EB00778566 /* BLEConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConnection.swift; sourceTree = "<group>"; };
+		E3FDE06724D1D39F00A95A96 /* AudioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecord.swift; sourceTree = "<group>"; };
+		E3FDE06924D1D64E00A95A96 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3E4B0B124A2B7E000778566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3E4B0C724A2B7E200778566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E341189424AA4D7A00BA0FB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4B0BB24A2B7E000778566 /* ContentView.swift */,
+				E341189024AA45D400BA0FB5 /* ContentViewB.swift */,
+				E341188E24AA44CB00BA0FB5 /* MotherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E341189524AA592F00BA0FB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E341189224AA483A00BA0FB5 /* ViewRouter.swift */,
+				E3E4B13524A413EB00778566 /* BLEConnection.swift */,
+				E341189824AE943F00BA0FB5 /* SpeechRecognition.swift */,
+				E3FDE06724D1D39F00A95A96 /* AudioRecord.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3E4B0AB24A2B7E000778566 = {
+			isa = PBXGroup;
+			children = (
+				E3E4B0B624A2B7E000778566 /* audioSwitch */,
+				E3E4B0CD24A2B7E200778566 /* audioSwitchTests */,
+				E3E4B0B524A2B7E000778566 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3E4B0B524A2B7E000778566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4B0B424A2B7E000778566 /* AudioSwitch.app */,
+				E3E4B0CA24A2B7E200778566 /* audioSwitchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3E4B0B624A2B7E000778566 /* audioSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4B13724A4502900778566 /* Models */,
+				E341189424AA4D7A00BA0FB5 /* Views */,
+				E341189524AA592F00BA0FB5 /* Controller */,
+				E3E4B0B724A2B7E000778566 /* AppDelegate.swift */,
+				E3E4B0B924A2B7E000778566 /* SceneDelegate.swift */,
+				E3E4B0BD24A2B7E200778566 /* Assets.xcassets */,
+				E3E4B0C224A2B7E200778566 /* LaunchScreen.storyboard */,
+				E3E4B0C524A2B7E200778566 /* Info.plist */,
+				E3E4B0BF24A2B7E200778566 /* Preview Content */,
+			);
+			path = audioSwitch;
+			sourceTree = "<group>";
+		};
+		E3E4B0BF24A2B7E200778566 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4B0C024A2B7E200778566 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3E4B0CD24A2B7E200778566 /* audioSwitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4B0CE24A2B7E200778566 /* audioSwitchTests.swift */,
+				E3E4B0D024A2B7E200778566 /* Info.plist */,
+			);
+			path = audioSwitchTests;
+			sourceTree = "<group>";
+		};
+		E3E4B13724A4502900778566 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E341189A24AEBABE00BA0FB5 /* ConnectedDevice.swift */,
+				E341189624AD86EB00BA0FB5 /* Characteristics.swift */,
+				E3FDE06924D1D64E00A95A96 /* Extensions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3E4B0B324A2B7E000778566 /* audioSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3E4B0D324A2B7E200778566 /* Build configuration list for PBXNativeTarget "audioSwitch" */;
+			buildPhases = (
+				E3E4B0B024A2B7E000778566 /* Sources */,
+				E3E4B0B124A2B7E000778566 /* Frameworks */,
+				E3E4B0B224A2B7E000778566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = audioSwitch;
+			productName = audioSwitch;
+			productReference = E3E4B0B424A2B7E000778566 /* AudioSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3E4B0C924A2B7E200778566 /* audioSwitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3E4B0D624A2B7E200778566 /* Build configuration list for PBXNativeTarget "audioSwitchTests" */;
+			buildPhases = (
+				E3E4B0C624A2B7E200778566 /* Sources */,
+				E3E4B0C724A2B7E200778566 /* Frameworks */,
+				E3E4B0C824A2B7E200778566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3E4B0CC24A2B7E200778566 /* PBXTargetDependency */,
+			);
+			name = audioSwitchTests;
+			productName = audioSwitchTests;
+			productReference = E3E4B0CA24A2B7E200778566 /* audioSwitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3E4B0AC24A2B7E000778566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Brodeur Co.";
+				TargetAttributes = {
+					E3E4B0B324A2B7E000778566 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					E3E4B0C924A2B7E200778566 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = E3E4B0B324A2B7E000778566;
+					};
+				};
+			};
+			buildConfigurationList = E3E4B0AF24A2B7E000778566 /* Build configuration list for PBXProject "audioSwitch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3E4B0AB24A2B7E000778566;
+			productRefGroup = E3E4B0B524A2B7E000778566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3E4B0B324A2B7E000778566 /* audioSwitch */,
+				E3E4B0C924A2B7E200778566 /* audioSwitchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3E4B0B224A2B7E000778566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E4B0C424A2B7E200778566 /* LaunchScreen.storyboard in Resources */,
+				E3E4B0C124A2B7E200778566 /* Preview Assets.xcassets in Resources */,
+				E3E4B0BE24A2B7E200778566 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3E4B0C824A2B7E200778566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3E4B0B024A2B7E000778566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E4B0B824A2B7E000778566 /* AppDelegate.swift in Sources */,
+				E3E4B13624A413EB00778566 /* BLEConnection.swift in Sources */,
+				E341189924AE943F00BA0FB5 /* SpeechRecognition.swift in Sources */,
+				E341189324AA483A00BA0FB5 /* ViewRouter.swift in Sources */,
+				E341188F24AA44CB00BA0FB5 /* MotherView.swift in Sources */,
+				E341189724AD86EB00BA0FB5 /* Characteristics.swift in Sources */,
+				E3FDE06824D1D39F00A95A96 /* AudioRecord.swift in Sources */,
+				E3FDE06A24D1D64E00A95A96 /* Extensions.swift in Sources */,
+				E341189B24AEBABE00BA0FB5 /* ConnectedDevice.swift in Sources */,
+				E3E4B0BA24A2B7E000778566 /* SceneDelegate.swift in Sources */,
+				E3E4B0BC24A2B7E000778566 /* ContentView.swift in Sources */,
+				E341189124AA45D400BA0FB5 /* ContentViewB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3E4B0C624A2B7E200778566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E4B0CF24A2B7E200778566 /* audioSwitchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3E4B0CC24A2B7E200778566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3E4B0B324A2B7E000778566 /* audioSwitch */;
+			targetProxy = E3E4B0CB24A2B7E200778566 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3E4B0C224A2B7E200778566 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3E4B0C324A2B7E200778566 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3E4B0D124A2B7E200778566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3E4B0D224A2B7E200778566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3E4B0D424A2B7E200778566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5;
+				DEVELOPMENT_ASSET_PATHS = "\"audioSwitch/Preview Content\"";
+				DEVELOPMENT_TEAM = SBNTR385K8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = audioSwitch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brodeur.AudioSwitch;
+				PRODUCT_NAME = AudioSwitch;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3E4B0D524A2B7E200778566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.5;
+				DEVELOPMENT_ASSET_PATHS = "\"audioSwitch/Preview Content\"";
+				DEVELOPMENT_TEAM = SBNTR385K8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = audioSwitch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brodeur.AudioSwitch;
+				PRODUCT_NAME = AudioSwitch;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3E4B0D724A2B7E200778566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = audioSwitchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brodeurco.audioSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/audioSwitch.app/audioSwitch";
+			};
+			name = Debug;
+		};
+		E3E4B0D824A2B7E200778566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = audioSwitchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brodeurco.audioSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/audioSwitch.app/audioSwitch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3E4B0AF24A2B7E000778566 /* Build configuration list for PBXProject "audioSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E4B0D124A2B7E200778566 /* Debug */,
+				E3E4B0D224A2B7E200778566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3E4B0D324A2B7E200778566 /* Build configuration list for PBXNativeTarget "audioSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E4B0D424A2B7E200778566 /* Debug */,
+				E3E4B0D524A2B7E200778566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3E4B0D624A2B7E200778566 /* Build configuration list for PBXNativeTarget "audioSwitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E4B0D724A2B7E200778566 /* Debug */,
+				E3E4B0D824A2B7E200778566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3E4B0AC24A2B7E000778566 /* Project object */;
+}
