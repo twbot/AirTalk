@@ -1,2 +1,2 @@
 # AirTalk
-Bluetooth communication app to allow seamless voice communication to individuals in your surroundings.
+iOS app that uses bluetooth to allow seamless voice communication to individuals in your immediate surroundings.
